@@ -5,8 +5,7 @@ MY_ANYLOGIC=$PROGFILES'AnyLogic 8.7 Professional\plugins\'
 MY_MAVEN=$MY_HOME'.m2\repository\'
 
 # CUSTOM PATH VARIABLES
-export PATH=$PATH:$PROGFILES'Git\bin'	   # must have git installed
-export PATH=$PATH:$MY_HOME'jdk-16.0.2\bin'	   # must have jdk installed
+export PATH=$PATH:$MY_HOME'jdk-11.0.12+7\bin'	   # must have jdk installed
 export PATH=$PATH:$MY_HOME'apache-maven-3.8.2\bin' # must have maven installed
 
 # ------- BEGIN JAR REFS FOR ANYLOGIC JUNIT COMPATABILITY ----
