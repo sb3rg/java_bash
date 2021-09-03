@@ -2,11 +2,11 @@
 PROGFILES='C:\Program Files\'
 MY_HOME='C:\Users\<YourUserFolder>\'
 MY_ANYLOGIC=$PROGFILES'AnyLogic 8.7 Professional\plugins\'
-MY_MAVEN=$MY_HOME'.m2\repository\'
+MY_MAVEN=$MY_HOME'jar\'
 
 # CUSTOM PATH VARIABLES
 export PATH=$PATH:$MY_HOME'jdk-11.0.12+7\bin'	   # must have jdk installed
-export PATH=$PATH:$MY_HOME'apache-maven-3.8.2\bin' # must have maven installed
+# export PATH=$PATH:$MY_HOME'apache-maven-3.8.2\bin' # must have maven installed
 
 # ------- BEGIN JAR REFS FOR ANYLOGIC JUNIT COMPATABILITY ----
 export AL_WS=$MY_HOME'.AnyLogicProfessional\Workspace8.7'
@@ -26,12 +26,13 @@ export AL_CP=$AL_CP:$MY_ANYLOGIC'org.apache.poi_1.0.0\lib\poi\poi-ooxml-schemas-
 export AL_CP=$AL_CP:$MY_ANYLOGIC'com.anylogic.process_modeling_library_8.7.6.202107211618\lib\ProcessModelingLibrary.jar'
 
 # EXTERNAL MAVEN DEPENDENCIES
-export AL_CP=$AL_CP:$MY_MAVEN'com\github\martincooper\java-datatable\0.9.0\java-datatable-0.9.0.jar'
-export AL_CP=$AL_CP:$MY_MAVEN'io\vavr\vavr\0.10.4\vavr-0.10.4.jar'
-export AL_CP=$AL_CP:$MY_MAVEN'jfree\jfreechart\1.0.13\jfreechart-1.0.13.jar'
-export AL_CP=$AL_CP:$MY_MAVEN'org\hamcrest\hamcrest-all\1.3\hamcrest-all-1.3.jar'
+export AL_CP=$AL_CP:$MY_MAVEN'java-datatable-0.9.0.jar'
+export AL_CP=$AL_CP:$MY_MAVEN'vavr-0.10.4.jar'
+export AL_CP=$AL_CP:$MY_MAVEN'jfreechart-1.0.13.jar'
+export AL_CP=$AL_CP:$MY_MAVEN'jcommon-1.0.16.jar'
+export AL_CP=$AL_CP:$MY_MAVEN'hamcrest-all-1.3.jar'
 
-JUNIT_JAR=$MY_MAVEN'org\junit\platform\junit-platform-console-standalone\1.7.2\junit-platform-console-standalone-1.7.2.jar'
+JUNIT_JAR=$MY_MAVEN'junit-platform-console-standalone-1.7.2.jar'
 
 # CONVENIENCE ALIAS
 JUNIT_JAR=$(echo $JUNIT_JAR | sed 's,\\,\\\\,g') # this substitutes single backslash for double backslash (needed next)
