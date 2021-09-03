@@ -2,7 +2,7 @@
 PROGFILES='C:\Program Files\'
 MY_HOME='C:\Users\<YourUserFolder>\'
 MY_ANYLOGIC=$PROGFILES'AnyLogic 8.7 Professional\plugins\'
-MY_MAVEN=$MY_HOME'jar\'
+MY_MAVEN=$MY_HOME'deps\jar\'
 
 # CUSTOM PATH VARIABLES
 export PATH=$PATH:$MY_HOME'jdk-11.0.12+7\bin'	   # must have jdk installed
