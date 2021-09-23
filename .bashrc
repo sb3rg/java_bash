@@ -24,6 +24,7 @@ export AL_CP=$AL_CP:$MY_ANYLOGIC'org.apache.poi_1.0.0\lib\poi\poi-ooxml-3.10.1-2
 export AL_CP=$AL_CP:$MY_ANYLOGIC'org.apache.poi_1.0.0\lib\poi\xmlbeans-2.6.0.jar'
 export AL_CP=$AL_CP:$MY_ANYLOGIC'org.apache.poi_1.0.0\lib\poi\poi-ooxml-schemas-3.10.1-20140818.jar'
 export AL_CP=$AL_CP:$MY_ANYLOGIC'com.anylogic.process_modeling_library_8.7.6.202107211618\lib\ProcessModelingLibrary.jar'
+export AL_CP=$AL_CP:$MY_ANYLOGIC'com.anylogic.third_party_libraries_8.7.6.202107211618\lib\database\querydsl\guava-18.0.jar'
 
 # EXTERNAL MAVEN DEPENDENCIES
 export AL_CP=$AL_CP:$MY_MAVEN'java-datatable-0.9.0.jar'
